@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url(https://media3.giphy.com/media/Dwv8Wl7vI1JUuOektL/giphy.gif?cid=6c09b952kjvf8z1pqs4qoa612fxryl0rrbrteij20kreiyt0&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
+        background-size: cover;
+        background-attachment: fixed;
+         background-position: center;
+        background-repeat: no-repeat;
+        }   
+        #taskInput {
+            padding: 10px;
+            width: 60%;
+        }
+        #addTaskBtn {
+            padding: 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #f4f4f4;
+            cursor: pointer;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .timestamp {
+            font-size: 0.8em;
+            color: gray;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Daily To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+    <button id="clearCompleted" style="margin-top: 10px; padding: 10px; cursor: pointer">Clear Completed</button>
+<script src="script.js"></script>
+</body>
+</html>
